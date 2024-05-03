@@ -1,7 +1,7 @@
 # JPA
 JPA Study
 
-## 목차
+## 기초 목차
 1. [JPA 소개.md](notes%2FJPA%20%EC%86%8C%EA%B0%9C.md)
 2. [JPA 동작 확인.md](notes%2FJPA%20%EB%8F%99%EC%9E%91%20%ED%99%95%EC%9D%B8.md)
 3. [Entity Mapping.md](notes%2FEntity%20Mapping.md)
@@ -10,3 +10,6 @@ JPA Study
 6. [고급 매핑.md](notes%2F%EA%B3%A0%EA%B8%89%20%EB%A7%A4%ED%95%91.md)
 7. [프록시와 연관관계 관리.md](notes%2F%ED%94%84%EB%A1%9D%EC%8B%9C%EC%99%80%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EA%B4%80%EB%A6%AC.md)
 8. [값 타입.md](notes%2F%EA%B0%92%20%ED%83%80%EC%9E%85.md)
+
+## 실전 1 목차
+1. [실전 JPA 1.md](%EC%8B%A4%EC%A0%84%20JPA%201%2F%EC%8B%A4%EC%A0%84%20JPA%201.md)
