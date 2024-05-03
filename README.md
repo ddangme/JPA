@@ -8,3 +8,4 @@ JPA Study
 4. [연관관계 매핑 기초.md](notes%2F%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20%EA%B8%B0%EC%B4%88.md)
 5. [연관관계 매핑 기초.md](notes%2F%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EB%A7%A4%ED%95%91%20%EA%B8%B0%EC%B4%88.md)
 6. [고급 매핑.md](notes%2F%EA%B3%A0%EA%B8%89%20%EB%A7%A4%ED%95%91.md)
+7. [프록시와 연관관계 관리.md](notes%2F%ED%94%84%EB%A1%9D%EC%8B%9C%EC%99%80%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84%20%EA%B4%80%EB%A6%AC.md)
