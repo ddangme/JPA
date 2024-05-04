@@ -239,7 +239,7 @@ em.persist(memberA);
 em.persist(memberB);
 em.persist(memberC);
 
-//중간에 JPQL 실행
+// 중간에 JPQL 실행
 query = em.createQuery("select m from Member m", Member.class);
 List<Member> members= query.getResultList();
 ```
@@ -266,5 +266,5 @@ em.setFlushMode(FlushModeType.COMMIT)
 | 방법                | 설명                 |
 |-------------------|--------------------|
 | em.detach(entity) | 특정 엔티티만 중영속 상태로 변환 |
-| em.detach         | 영속성 컨텍스트를 완전히 초기화  |
-| em.detach         | 영속성 컨텍스트 종료        |
+| em.clear()        | 영속성 컨텍스트를 완전히 초기화  |
+| em.close()        | 영속성 컨텍스트 종료        |
