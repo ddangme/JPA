@@ -1,5 +1,5 @@
 ## 도메인 설계
-![도메인 모델.png](imgs%2F%EB%8F%84%EB%A9%94%EC%9D%B8%20%EB%AA%A8%EB%8D%B8.png)
+![도메인 모델.png](..%2Fimgs%2F%EC%8B%A4%EC%A0%84%201%2F%EB%8F%84%EB%A9%94%EC%9D%B8%20%EB%AA%A8%EB%8D%B8.png)
 
 ### [Member.java](..%2Fsrc%2Fmain%2Fjava%2Fddangme%2Fjpa%2Fdomain%2FMember.java)
 ```java
