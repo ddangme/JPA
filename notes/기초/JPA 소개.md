@@ -34,10 +34,9 @@ UPADTE MEMBER SET ...
 
 #### 상속
 ##### 객체 상속 관계
-![객체의 상속 관계.png](imgs%2Fch01%7E02%2F%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EC%83%81%EC%86%8D%20%EA%B4%80%EA%B3%84.png)
-
+![객체의 상속 관계.png](..%2Fimgs%2Fch01%7E02%2F%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EC%83%81%EC%86%8D%20%EA%B4%80%EA%B3%84.png)
 ##### Table 슈퍼 타입 서브 타입 관계
-![DB 슈퍼 타입 서브 타입 관계.png](imgs%2Fch01%7E02%2FDB%20%EC%8A%88%ED%8D%BC%20%ED%83%80%EC%9E%85%20%EC%84%9C%EB%B8%8C%20%ED%83%80%EC%9E%85%20%EA%B4%80%EA%B3%84.png)
+![DB 슈퍼 타입 서브 타입 관계.png](..%2Fimgs%2Fch01%7E02%2FDB%20%EC%8A%88%ED%8D%BC%20%ED%83%80%EC%9E%85%20%EC%84%9C%EB%B8%8C%20%ED%83%80%EC%9E%85%20%EA%B4%80%EA%B3%84.png)
 
 ##### Album 저장
 1. 객체 분해하기
@@ -59,7 +58,7 @@ UPADTE MEMBER SET ...
 #### 연관 관계
 - 객체는 참조를 사용한다. member.getTeam();
 - 테이블은 외래 키를 사용한다. JOIN ON M.TEAM_ID = T.TEAM_ID
-![객체와 DB의 연관관계.png](imgs%2Fch01%7E02%2F%EA%B0%9D%EC%B2%B4%EC%99%80%20DB%EC%9D%98%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84.png)  
+![객체와 DB의 연관관계.png](..%2Fimgs%2Fch01%7E02%2F%EA%B0%9D%EC%B2%B4%EC%99%80%20DB%EC%9D%98%20%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84.png)  
 - 객체를 테이블에 맞추어 모델링
 ```java
 class Member {
@@ -128,7 +127,7 @@ public Member find(String memberId){
 
 ##### 객체 그래프 탐색
 객체는 자유롭게 객체 그래프를 탐색할 수 있어야 한다.
-![객체 그래프 탐색.png](imgs%2Fch01%7E02%2F%EA%B0%9D%EC%B2%B4%20%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89.png)  
+![객체 그래프 탐색.png](..%2Fimgs%2Fch01%7E02%2F%EA%B0%9D%EC%B2%B4%20%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%83%90%EC%83%89.png)  
 
 ##### 처음 실행하는 SQL에 따라 탐색 범위 결정
 ```SQL
@@ -207,20 +206,20 @@ member1 == member2; //같다.
 - ORM 프레임워크가 중간에서 매핑
 - 대중적인 언어에는 대부분 ORM 기술이 존재한다.
 - JPA는 애플리케이션과 JDBC 사이에서 동작한다.
-    ![JPA와 JDBC.png](imgs%2Fch01%7E02%2FJPA%EC%99%80%20JDBC.png)  
+    ![JPA와 JDBC.png](..%2Fimgs%2Fch01%7E02%2FJPA%EC%99%80%20JDBC.png)  
 ### JPA 동작
 1. 저장
-    ![JPA 저장.png](imgs%2Fch01%7E02%2FJPA%20%EC%A0%80%EC%9E%A5.png)
+    ![JPA 저장.png](..%2Fimgs%2Fch01%7E02%2FJPA%20%EC%A0%80%EC%9E%A5.png)
 2. 조회
-    ![JPA 조회.png](imgs%2Fch01%7E02%2FJPA%20%EC%A1%B0%ED%9A%8C.png)
+    ![JPA 조회.png](..%2Fimgs%2Fch01%7E02%2FJPA%20%EC%A1%B0%ED%9A%8C.png)
 
 ### JPA 소개
-![JPA 소개.png](imgs%2Fch01%7E02%2FJPA%20%EC%86%8C%EA%B0%9C.png)
+![JPA 소개.png](..%2Fimgs%2Fch01%7E02%2FJPA%20%EC%86%8C%EA%B0%9C.png)
 
 - JPA는 인터페이스의 모음
 - JPA 2.1 표준 명세를 구현한 3가지 구현체
   - 하이버네이트, EclipseLink, DataNucleus
-        ![JPA 구현체.png](imgs%2Fch01%7E02%2FJPA%20%EA%B5%AC%ED%98%84%EC%B2%B4.png)
+        ![JPA 구현체.png](..%2Fimgs%2Fch01%7E02%2FJPA%20%EA%B5%AC%ED%98%84%EC%B2%B4.png)
 
 ### JPA를 왜 사용해야 하는가?
 - SQL 중심적인 개발에서 객체 중심으로 개발할 수 있게된다.
@@ -282,7 +281,7 @@ member1 == member2; //같다.
   - 지연 로딩(Lazy Loading)
     - 지연 로딩: 객체가 실제 사용될 때 로딩
     - 즉시 로딩: JOIN SQL로 한번에 연관된 객체까지 미리 조회
-        ![지연 로딩과 즉시 로딩.png](imgs%2Fch01%7E02%2F%EC%A7%80%EC%97%B0%20%EB%A1%9C%EB%94%A9%EA%B3%BC%20%EC%A6%89%EC%8B%9C%20%EB%A1%9C%EB%94%A9.png)  
+        ![지연 로딩과 즉시 로딩.png](..%2Fimgs%2Fch01%7E02%2F%EC%A7%80%EC%97%B0%20%EB%A1%9C%EB%94%A9%EA%B3%BC%20%EC%A6%89%EC%8B%9C%20%EB%A1%9C%EB%94%A9.png)  
 - 데이터 접근 추상화와 벤더 독립성
 - 표준
 
@@ -301,10 +300,10 @@ member1 == member2; //같다.
   - 문자열을 자르는 함수: SQL 표준은 SUBSTRING(), Oracle은 SUBSTR()
   - 페이징: MySQL은 LIMIT, Oracle은 ORWNUM
 - 방언: SQL 표준을 지키지 않는 특정 데이터베이스만의 고유한 기능
-    ![데이터베이스 방언.png](imgs%2Fch01%7E02%2F%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EB%B0%A9%EC%96%B8.png)
+    ![데이터베이스 방언.png](..%2Fimgs%2Fch01%7E02%2F%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EB%B0%A9%EC%96%B8.png)
 
 ### JPA 구동 방식
-![JPA 구동 방식.png](imgs%2Fch01%7E02%2FJPA%20%EA%B5%AC%EB%8F%99%20%EB%B0%A9%EC%8B%9D.png)
+![JPA 구동 방식.png](..%2Fimgs%2Fch01%7E02%2FJPA%20%EA%B5%AC%EB%8F%99%20%EB%B0%A9%EC%8B%9D.png)
 
 
 

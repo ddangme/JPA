@@ -54,7 +54,7 @@ CREATE TABLE Member(
 - 객체와 관계형 데이터베이스 매핑하기(Object Relational Mapping)
 - 영속성 컨텍스트
 
-![엔티티 매니저 팩토리와 엔티티 매니저.png](imgs%2Fch01%7E02%2F%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%EB%8B%88%EC%A0%80%20%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%99%80%20%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%EB%8B%88%EC%A0%80.png)
+![엔티티 매니저 팩토리와 엔티티 매니저.png](..%2Fimgs%2Fch01%7E02%2F%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%EB%8B%88%EC%A0%80%20%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%99%80%20%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%EB%8B%88%EC%A0%80.png)
 
 ### 영속성 컨텍스트
 - JPA를 이해하는데 가장 중요한 용어
@@ -66,7 +66,7 @@ CREATE TABLE Member(
 - 눈에 보이지 않는다.
 - 엔티티 매니저를 통해서 영속성 컨텍스트에 접근한다.
 
-![J2SE.png](imgs%2Fch01%7E02%2FJ2SE.png)
+![J2SE.png](..%2Fimgs%2Fch01%7E02%2FJ2SE.png)
 
 ### 엔티티의 생명주기
 - 비영속(new/transient)
@@ -78,10 +78,10 @@ CREATE TABLE Member(
 - 삭제(removed)
   - 삭제된 상태
 
-![엔티티의 생명주기.png](imgs%2Fch01%7E02%2F%EC%97%94%ED%8B%B0%ED%8B%B0%EC%9D%98%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.png)
+![엔티티의 생명주기.png](..%2Fimgs%2Fch01%7E02%2F%EC%97%94%ED%8B%B0%ED%8B%B0%EC%9D%98%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.png)
 
 #### 비영속
-![비영속.png](imgs%2Fch01%7E02%2F%EB%B9%84%EC%98%81%EC%86%8D.png)
+![비영속.png](..%2Fimgs%2Fch01%7E02%2F%EB%B9%84%EC%98%81%EC%86%8D.png)
 ```java
 //객체를 생성한 상태(비영속)
 Member member = new Member();
@@ -90,7 +90,7 @@ member.setUsername("회원1");
 ```
 
 #### 영속
-![영속.png](imgs%2Fch01%7E02%2F%EC%98%81%EC%86%8D.png)
+![영속.png](..%2Fimgs%2Fch01%7E02%2F%EC%98%81%EC%86%8D.png)
 ```java
 //객체를 생성한 상태(비영속)
 Member member = new Member();
@@ -126,7 +126,7 @@ em.remove(member);
 
 ### 흐름
 엔티티 조회, 1차 캐시  
-![엔티티 조회 1차 캐시.png](imgs%2Fch01%7E02%2F%EC%97%94%ED%8B%B0%ED%8B%B0%20%EC%A1%B0%ED%9A%8C%201%EC%B0%A8%20%EC%BA%90%EC%8B%9C.png)    
+![엔티티 조회 1차 캐시.png](..%2Fimgs%2Fch01%7E02%2F%EC%97%94%ED%8B%B0%ED%8B%B0%20%EC%A1%B0%ED%9A%8C%201%EC%B0%A8%20%EC%BA%90%EC%8B%9C.png)    
 ```java
 //엔티티를 생성한 상태(비영속)
 Member member = new Member();
@@ -137,7 +137,7 @@ em.persist(member);
 ```
 
 1차 캐시에서 조회    
-![1차 캐시 조회.png](imgs%2Fch01%7E02%2F1%EC%B0%A8%20%EC%BA%90%EC%8B%9C%20%EC%A1%B0%ED%9A%8C.png)  
+![1차 캐시 조회.png](..%2Fimgs%2Fch01%7E02%2F1%EC%B0%A8%20%EC%BA%90%EC%8B%9C%20%EC%A1%B0%ED%9A%8C.png)  
 ```java
 Member member = new Member();
 member.setId("member1");
@@ -151,7 +151,7 @@ Member findMember = em.find(Member.class, "member1");
 ```
 
 데이터베이스에서 조회   
-![데이터베이스에서 조회.png](imgs%2Fch01%7E02%2F%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%97%90%EC%84%9C%20%EC%A1%B0%ED%9A%8C.png)
+![데이터베이스에서 조회.png](..%2Fimgs%2Fch01%7E02%2F%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%97%90%EC%84%9C%20%EC%A1%B0%ED%9A%8C.png)
 
 ```java
 // 데이터베이스에서 조회   
@@ -184,11 +184,11 @@ em.persist(memberB);
 //커밋하는 순간 데이터베이스에 INSERT SQL을 보낸다.
 transaction.commit(); // [트랜잭션] 커밋
 ```
-![저장 A.png](imgs%2Fch01%7E02%2F%EC%A0%80%EC%9E%A5%20A.png)
+![저장 A.png](..%2Fimgs%2Fch01%7E02%2F%EC%A0%80%EC%9E%A5%20A.png)
 
-![저장 B.png](imgs%2Fch01%7E02%2F%EC%A0%80%EC%9E%A5%20B.png)
+![저장 B.png](..%2Fimgs%2Fch01%7E02%2F%EC%A0%80%EC%9E%A5%20B.png)
 
-![commit.png](imgs%2Fch01%7E02%2Fcommit.png)
+![commit.png](..%2Fimgs%2Fch01%7E02%2Fcommit.png)
 
 
 
@@ -209,7 +209,7 @@ memberA.setAge(10);
 //em.update(member) 이런 코드가 있어야 하지 않을까?
 transaction.commit(); // [트랜잭션] 커밋
 ```
-![변경 감지.png](imgs%2Fch01%7E02%2F%EB%B3%80%EA%B2%BD%20%EA%B0%90%EC%A7%80.png)
+![변경 감지.png](..%2Fimgs%2Fch01%7E02%2F%EB%B3%80%EA%B2%BD%20%EA%B0%90%EC%A7%80.png)
 
 ### 엔티티 삭제
 ```java
