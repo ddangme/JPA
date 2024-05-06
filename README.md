@@ -12,4 +12,4 @@ JPA Study
 8. [값 타입.md](notes%2F%EA%B8%B0%EC%B4%88%2F%EA%B0%92%20%ED%83%80%EC%9E%85.md)
 
 ## 실전 1 목차
-1. [실전 JPA 1.md](notes%2F%EC%8B%A4%EC%A0%84%201%2F%EC%8B%A4%EC%A0%84%20JPA%201.md)
+1. [도메인 분석 설계.md](notes%2F%EC%8B%A4%EC%A0%84%201%2F%EB%8F%84%EB%A9%94%EC%9D%B8%20%EB%B6%84%EC%84%9D%20%EC%84%A4%EA%B3%84.md)
